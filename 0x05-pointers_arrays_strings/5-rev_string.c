@@ -2,23 +2,25 @@
 
 /**
  * print_rev - will print a string in reverse
- * @s: string to print
+ * @s: string to print in reverse
  *
  * Return: void
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i = 0;
+	int j = 0, i = 0;
+	char str[500];
 
 	while (s[i] != '\0')
 	{
+		str[i] = s[i];
 		i++;
 	}
 	i = i - 1;
 	while (i >= 0)
 	{
-		_putchar(s[i]);
+		s[i] = str[j];
+		j++;
 		i--;
 	}
-	_putchar('\n');
 }
