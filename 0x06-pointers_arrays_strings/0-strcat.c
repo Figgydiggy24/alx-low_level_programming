@@ -7,20 +7,20 @@
  * Return: dest;
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-	int a, b;
+	int i, j;
 
-	for (a = 0; dest[a] != '\0'; a++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 		continue;
 	}
 
-	for (b = 0; src[b] != '\0'; a++, b++)
+	for (j = 0; src[j] != '\0'; i++, j++)
 	{
-		dest[a] = src[b];
+		dest[i] = src[j];
 	}
 
-	dest[a] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
