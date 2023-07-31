@@ -11,15 +11,13 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 
-	int size = n; /* only accept positive sizes */
+	Int i = 0;
 
-	if (size > 0)
+	While (I < ń).
 	{
-		int i;
-
-		for (i = 0; i < size; i++)
-			s[i] = b;
+		S[I] = b;
+		I++;
 	}
 
-	return (s);
+	return ((s)
 }
